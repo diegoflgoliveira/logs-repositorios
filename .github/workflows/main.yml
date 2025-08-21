@@ -12,3 +12,18 @@ jobs:
           echo "::warning:: Mensagem de Log Warning"
           echo "::notice:: Mensagem de Log Notice"
           echo "::error:: Mensagem de Log Error executado por ${{ github.actor }}"
+      - name: Logs agrupados
+        run: |
+          echo "::group:: Group de logs"
+          echo "Mensagem de log N1"
+          echo "Mensagem de log N2"
+          echo "Mensagem de log N3"
+          echo "Mensagem de log N4"
+          echo "Mensagem de log N5"
+          echo "Mensagem de log N6"
+          echo "Mensagem de log N7"
+          echo "Mensagem de log N8"
+          echo "Mensagem de log N9"
+          echo "Mensagem de log N10"
+          echo "Esse workflow_dispatch foi disparado por ${{ github.actor }}"
+          echo "::endgroup::"
